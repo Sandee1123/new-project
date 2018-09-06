@@ -1,0 +1,67 @@
+<form class="inline">
+    <div class="form-group">
+      <a [routerLink]="['/adminview/addreview']">
+        <button type="button" class="btn btn-primary" id="addnew" >
+          Add New
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+      </a>
+     
+
+
+    </div>
+
+    
+
+  </form>
+
+  <br>
+  <br>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+       
+        <th>employee
+          <i class="fa fa-sort"></i>
+        </th>
+        <th>review
+          <i class="fa fa-sort"></i>
+        </th>
+      
+
+        
+
+      </tr>
+    </thead>
+    <tr *ngFor="let e of employee">
+      <!-- <ng-container *ngFor="let e of employee"> -->
+     
+      <td>
+        {{e.name}}
+      </td>
+      
+      <td>
+        {{e.review}}
+      </td>
+      
+
+
+
+      <td>
+        <a href="home/employeeview">
+
+          <span class="glyphicon glyphicon-trash" style="color:red" (click)= delete(e.reviewno) title="delete"></span>
+        </a>
+      </td>
+
+      <td>
+        <span class="glyphicon glyphicon-edit" title="Edit" (click)="update(e.empno)" title="edit"></span>
+      </td>
+      <td>
+        <span class="glyphicon glyphicon-copy"></span>
+
+      </td>
+      <!-- </ng-container> -->
+
+    </tr>
+  </table>

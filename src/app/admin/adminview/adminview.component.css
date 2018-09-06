@@ -1,0 +1,18 @@
+
+
+select,input{
+    width:710px;
+}
+
+.modal-body{
+    background:rgb(12, 109, 221);
+}
+.selectpicker{
+    height: 40px;
+    width: 230px;
+    margin:10px;
+   
+}
+#addnew{
+    mragin:20px;
+}

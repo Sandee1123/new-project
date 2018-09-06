@@ -1,0 +1,21 @@
+
+
+
+#addnew{
+    margin:20px;
+}
+input{
+    width:340px;
+
+
+}
+.container{
+    margin:20px;
+    position: relative;
+    left:40px;
+    top:70px;
+}
+button{
+    position: relative;
+    left:300px;
+}

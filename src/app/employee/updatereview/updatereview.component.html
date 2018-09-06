@@ -1,0 +1,33 @@
+<form class="inline" *ngFor="let e of editemp">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="reviewno">id</label>
+        <div class="col-sm-6">
+          <input class="form-control" rows="4" id="reviewno" name="reviewno" [(ngModel)]="reviewno">
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="control-label col-sm-2" for="name">review</label>
+          <div class="col-sm-6">
+            <input class="form-control" rows="4" id="name" name="review" [(ngModel)]="review">
+          </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">empno</label>
+            <div class="col-sm-6">
+              <input class="form-control" rows="4" id="name" name="empno" [(ngModel)]="empno">
+            </div>
+          </div>
+          <div class="form-group">
+              <a href="home/employeeview">
+               
+              <button type="button" class="btn btn-info" (click)="addreview($e)">
+                submit 
+            
+              </button>
+            </a>
+            </div>
+    
+
+  
+
+</form>

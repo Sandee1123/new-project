@@ -1,0 +1,33 @@
+<form class="inline" *ngFor="let e of editemp">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="empno">empno</label>
+        <div class="col-sm-6">
+          <input class="form-control" rows="4" id="empno" name="empno" [(ngModel)]="e.empno">
+        </div>
+      </div>
+      <div class="form-group">
+          <label class="control-label col-sm-2" for="name">name</label>
+          <div class="col-sm-6">
+            <input class="form-control" rows="4" id="name" name="name" [(ngModel)]="e.name">
+          </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">salary</label>
+            <div class="col-sm-6">
+              <input class="form-control" rows="4" id="name" name="salary" [(ngModel)]="e.salary">
+            </div>
+          </div>
+          <div class="form-group">
+              <a href="home/adminview">
+               
+              <button type="button" class="btn btn-info" (click)="updateemployee(e)">
+                submit 
+            
+              </button>
+            </a>
+            </div>
+    
+
+  
+
+</form>
